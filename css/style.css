@@ -1,0 +1,270 @@
+/* Font Embedding */
+@font-face {
+  font-family: 'neosans regular';
+  src: url('../fonts/neosans-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima nova light';
+  src: url('../fonts/proximanova-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'segoe ui';
+  src: url('../fonts/seguisym.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'impact';
+  src: url('../fonts/impact.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Layout debugging classes */
+.bg-red {
+	background-color: #F00;
+}
+
+.bg-green {
+	background-color: #0F0;
+}
+
+.bg-blue {
+	background-color: #00F;
+}
+
+/* Reset margins and padding */
+body, header, h1, h2, h3, h4, h5, h6, p, footer, span {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'proxima nova light', 'segoe ui', Sans-serif;
+}
+
+section {
+	margin: 20px 0;
+	padding: 60px 0 0 0;
+}
+
+h1, h2, h3, h4, h5, h6, label, .navbar-brand, .nav-link {
+	font-family: 'neosans regular', 'impact', Sans-serif;
+}
+
+/* Header and Navigation Section */
+
+#logo {
+	background-color: #4CFF00;
+	border: 2px solid #000;
+	margin-right: 5px;
+	width: 30px;
+}
+
+.navbar-brand {
+	border-right: 2px solid #DDD;
+	margin-right: 8px;
+	padding-right: 8px;
+}
+
+#slogan{
+	color: #FFF;
+}
+
+.nav-item {
+	text-align: center;
+}
+
+.nav-link {
+	color: rgba(255, 255, 255, 1) !important;
+}
+.navbar-brand:hover, .nav-link:hover {
+	color: rgba(255, 255, 255, 0.5) !important;
+	transition: color 0.3s;
+}
+
+/* Carousel Section */
+
+#landing {
+	margin: 0;
+	padding-top: 55px;
+}
+
+#myCarousel {
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+.carousel-item {
+	text-align: center;
+}
+
+.carousel-item img {
+	width: 88%;
+}
+
+#left-control.carousel-control-prev,
+#right-control.carousel-control-next {
+	color: red !important;
+}
+
+/* Trending Section */
+
+#showcase h1 {
+	margin-bottom: 15px;
+}
+
+#showcase .showcase-left img {
+	width: 90%;
+}
+
+#showcase .showcase-right {
+	margin-top: 20px;
+	padding: 20px;
+	width: 100%;
+}
+
+#showcase .showcase-btn {
+	margin-left: 15px;
+}
+.btn-success {
+	background-color: #3DCC00;
+	border-color: #3DCC00;
+	border-radius: 20px;
+    color: #fff;
+}
+
+/* Electronics Catergories Section */
+
+.gizmo {
+	text-align: center;
+}
+.gizmo img {
+	margin-bottom: 5px; 
+	width: 100%;
+}
+.gizmo:hover {
+	cursor: pointer;
+	opacity: 0.6;
+	transition: opacity 0.3s;
+}
+
+/* Contact Form Section */
+
+#contact {
+	background: url("../images/aurea.jpg") no-repeat;
+	background-size: cover;
+	border-top: 7px solid #3DCC00;
+	border-bottom: 7px solid #3DCC00;
+	margin-bottom: 0;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#contact .mylabel {
+	color: #FFF;
+	text-align: left !important;
+}
+
+#contact h3 {
+	color: #FFF;
+}
+
+/* Footer Section */
+
+footer {
+	background-color: #343a40;
+	color: #FFF;
+	padding: 10px;
+	text-align: center;
+}
+
+footer a {
+	color: #FFF;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+footer a:hover {
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.icon-list {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0 20px;
+	padding: 0;
+}
+
+.icon-list li {
+	display: inline-block;
+	margin-right: 20px;
+	padding: 3px;
+}
+
+.icon {
+	width: 25px;
+}
+
+.icon:hover {
+	opacity: 0.4;
+	transition: opacity 0.3s;
+}
+
+/* Responsive design rules for mobile */
+
+@media only screen and (max-width: 1200px){
+	#showcase .showcase-right {
+		margin-top: 0;
+	}
+	#showcase h1 {
+		font-size: 35px;
+	}
+}
+
+@media only screen and (max-width: 992px){
+	#showcase h1 {
+		font-size: 30px;
+	}
+	#showcase p {
+		font-size: 15px;
+
+}
+
+@media only screen and (max-width: 768px){
+	#slogan{
+		display: none;
+	}
+	.navbar-brand {
+		border-right: none;
+	}
+	#showcase .showcase-left {
+		padding-top: 50px;
+	}
+	#showcase .showcase-left img {
+		width: 100%;
+	}
+	#showcase h1 {
+		font-size: 20px;
+	}
+	#showcase p {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 575.98px){
+	#showcase .showcase-left {
+		padding-top: 0;
+	}
+}
