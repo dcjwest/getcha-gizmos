@@ -15,26 +15,29 @@ $(function(){
 		origin: 'left',
 		distance: '1000px'
 	});
+	sr.reveal('.gizmo-heading', {
+		duration: 2000,
+		origin: 'right',
+		viewFactor: 0.3
+	});
 	sr.reveal('.showcase-left', {
 		duration: 2000,
 		origin: 'left',
-		distance: '1000px',
-		viewFactor: 0.2
+		distance: '100px'
 	});
 	sr.reveal('.showcase-right', {
 		duration: 2000,
-		origin: 'right',
-		distance: '1000px',
-		viewFactor: 0.2
+		origin: 'top',
+		distance: '100px'
 	});
 	sr.reveal('.showcase-btn', {
 		duration: 1000,
 		delay: 1000,
-		origin: 'bottom',
+		origin: 'bottom'
 	});
 	sr.reveal('.gizmo', {
 		duration: 2000,
-		origin: 'right',
+		origin: 'left',
 		distance: '200px',
 		viewFactor: 0.02
 	});

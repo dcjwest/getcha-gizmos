@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
 	<title>Getcha Gizmos | Latest & greatest gadgets galore! </title>
 
@@ -14,10 +14,9 @@
 	<script type="text/javascript" src="tools/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 <body>
-	<!-- Navigation -->
-	<header id="home">
+	<header>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-	      <a class="navbar-brand" href="index.html"><img id="logo" src="images/GGlogo.png">GetchaGizmos</a>
+	      <a class="navbar-brand" href="index.html"><img id="logo" src="images/GGlogo.png"><h1>Getcha Gizmos</h1></a>
           <span id="slogan">Latest & greatest gadgets galore!</span>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="navbar-toggler-icon"></span>
@@ -26,7 +25,7 @@
 	      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item">
-	            <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+	            <a class="nav-link" href="#landing">Home<span class="sr-only">(current)</span></a>
 	          </li>
 	          <li class="nav-item">
 	            <a class="nav-link" href="#showcase">Trending</a>
@@ -44,40 +43,37 @@
 
 	<section id="landing">
 		<div class="container">
-    		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
     			<!-- Indicators -->
     			<ul class="carousel-indicators">
-    				<li data-target="#myCarousel" data-slide-to="0" class="active">
-    					
-    				</li>
-    				<li data-target="#myCarousel" data-slide-to="1">
-    					
-    				</li>
-    				<li data-target="#myCarousel" data-slide-to="2">
-    					
-    				</li>
+    				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    				<li data-target="#myCarousel" data-slide-to="1"></li>
+    				<li data-target="#myCarousel" data-slide-to="2"></li>
     			</ul>
     			<!-- Slideshow -->
     			<div class="carousel-inner">
     				<div class="carousel-item active">
-    					<img src="images/carousel1.jpg">
+    					<img class="large-img" src="images/carousel1.jpg">
+    					<img class="small-img" src="images/sm-carousel1.jpg">
     					<div class="carousel-caption">
     						<h2>Computing Has Never Been Simpler</h2>
-    						<p>Shop our diverse range of desktops, laptops, and accessories</p>
+    						<h6>Shop our diverse range of desktops, laptops, and accessories</h6>
     					</div>
     				</div>
     				<div class="carousel-item">
-    					<img src="images/carousel2.jpg">
+    					<img class="large-img" src="images/carousel2.jpg">
+    					<img class="small-img" src="images/sm-carousel2.jpg">
     					<div class="carousel-caption">
     						<h2>Move Your Feet to The Beat</h2>
-    						<p>Browse our selections of all things audio!</p>
+    						<h6>Browse our selections of all things audio!</h6>
     					</div>
     				</div>
     				<div class="carousel-item">
-    					<img src="images/carousel3.jpg">
+    					<img class="large-img" src="images/carousel3.jpg">
+    					<img class="small-img" src="images/sm-carousel3.jpg">
     					<div class="carousel-caption">
     						<h2>Waves of The Future</h2>
-    						<p>Stay up to date with the latest Gizmos!</p>
+    						<h6>Stay up to date with the latest Gizmos!</h6>
     					</div>
     				</div>
     			</div>
@@ -91,10 +87,11 @@
     		</div>
 		</div>
 	</section>
-    
-    <section id="showcase">
+	<hr>
+	<section id="showcase">
     	<div class="container">
     		<div class="row">
+    			<div class="col-sm-12 gizmo-heading"><h1 id="trending">Trending Now</h1></div>
     			<div class="col-sm-6">
     				<div class="showcase-left">
     					<img src="images/pika-switch.jpg">
@@ -102,7 +99,7 @@
     			</div>
     			<div class="col-sm-6">
     				<div class="showcase-right">
-    					<h1>Nintendo Switch Let's Go! Pikachu & Eevee Edition Announced</h1>
+    					<h2>Nintendo Switch Let's Go! Pikachu & Eevee Edition Announced</h2>
     					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -113,18 +110,17 @@
     		</div>
     	</div>
     </section>
-
+    <hr>
     <section id="gizmos">
     	<div class="container">
 	    	<div class="row">
-	    		<div class="col-sm-12 gizmo"><h1>Gizmo Categories</h1></div>
+	    		<div class="col-sm-12 gizmo-heading"><h1>Gizmo Categories</h1></div>
 		    	<div class="col-md-4 gizmo"><img src="images/office.jpg"><h6>Computers & Office</h6></div>
 		    	<div class="col-md-4 gizmo"><img src="images/consoles.jpg"><h6>Gaming</h6></div>
 		    	<div class="col-md-4 gizmo"><img src="images/accessories.jpg"><h6>Audio & Accessories</h6></div>
 		    </div>
 	    </div>
     </section>
-
     <section id="contact">
     	<div class="container">
     		<div class="row">
@@ -153,13 +149,13 @@
     </section>
 
     <footer>
-    	<a href="index.html"><p class="text-center">&copy; 2018 GetchaGizmos & D. van der Westhuizen</p></a>
     	<ul class="icon-list">
     		<li><a href="#"><img class="icon" src="images/icons/email-icon.png"></a></li>
     		<li><a href="#"><img class="icon" src="images/icons/facebook-icon.png"></a></li>
     		<li><a href="#"><img class="icon" src="images/icons/twitter-icon.png"></a></li>
     		<li><a href="#"><img class="icon" src="images/icons/linkedin-icon.png"></a></li>
     	</ul>
+        <a href="index.html"><p class="text-center">&copy; 2018 GetchaGizmos | All rights reserved</p></a>
     </footer>
 
 	<script type="text/javascript" src="css/bootstrap/js/jquery-3.3.1.js"></script>
@@ -167,33 +163,21 @@
     <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <script>
-    
-    // $(function() {
-    //   $('a[href*="#"]:not([href="#"])').click(function() {
-    //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-    //       var target = $(this.hash);
-    //       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-    //       if (target.length) {
-    //         $('html, body').animate({
-    //           scrollTop: target.offset().top
-    //         }, 1000);
-    //         return false;
-    //       }
-    //     }
-    //   });
-    // });
+    	$(function() {
 
-    // Smooth Scrolling code snippet - source: https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
-    function smoothScrollingTo(target){
-        $('html,body').animate({scrollTop:$(target).offset().top}, 500);
-    }
-    $('a[href*=\\#]').on('click', function(event){     
-        event.preventDefault();
-        smoothScrollingTo(this.hash);
-    });
-    $(function(){
-        window.onbeforeunload = function(){window.scrollTo(0, 0);}
-        smoothScrollingTo(location.hash);
+      // Smooth Scrolling code snippet - source: https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link 
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
     });
     </script>
 </body>
